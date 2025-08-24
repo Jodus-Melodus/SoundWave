@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111111;
+    color: white;
+}
+
+.sidebar {
+    width: 200px;
+    background: #272727;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+#main-content {
+    margin-left: 200px;
+    padding: 20px;
+    min-height: calc(100vh - 80px);
+}
+
+.player {
+    background: #181818;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+}
