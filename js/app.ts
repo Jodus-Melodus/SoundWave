@@ -1,5 +1,5 @@
 
-import { getLatestTracks } from './api.js'
+import { getLatestTracks } from './api.ts'
 
 async function test() {
     const tracks = await getLatestTracks(5);
