@@ -3,38 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sound Wave</title>
+    <title>SoundWave</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <h2>Sound Wave</h2>
+    <div class="sidebar">
         <ul>
-            <li data-page="home">Home</li>
-            <li data-page="search">Search</li>
-            <li data-page="library">Library</li>
+            <li>Home</li>
+            <li>Search</li>
+            <li>Library</li>
         </ul>
-    </aside>
+    </div>
 
-    <!-- Main Content -->
-    <main id="main-content">
+    <div class="main-content">
         <h1>Latest Tracks</h1>
         <div id="tracks"></div>
-    </main>
+    </div>
 
-    <!-- Bottom Player -->
-    <footer class="player">
-        <div id="now-playing">No song playing</div>
+
+    <div class="player">
+        <span id="now-playing" class="now-playing">Nothing playing</span>
         <audio id="audioPlayer" controls></audio>
-    </footer>
+    </div>
 
-    <!-- JS files -->
-    <script src="js/api.ts"></script>
-    <script src="js/templates.ts"></script>
-    <script src="js/player.ts"></script>
-    <script src="js/app.ts"></script>
+    <script type="module" src="js/api.js"></script>
+    <script type="module" src="js/ui.js"></script>
+    <script type="module" src="js/player.js"></script>
+    <script type="module" src="js/app.js"></script>
+
 </body>
 
 </html>
