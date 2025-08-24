@@ -12,4 +12,4 @@ async function loadHome() {
     }
 }
 
-// loadHome();
+loadHome();
