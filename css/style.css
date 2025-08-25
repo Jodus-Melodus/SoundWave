@@ -49,7 +49,6 @@ body {
     padding: 20px;
 }
 
-
 .track {
     background-color: rgb(39, 39, 39);
     display: flex;
@@ -71,6 +70,7 @@ body {
     border-radius: 17.5px;
     margin-right: 20px;
     border-style: none;
+    cursor: pointer;
 }
 
 .top-menu {
