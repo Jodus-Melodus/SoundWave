@@ -34,19 +34,33 @@ body {
     padding: 10px;
 }
 
-.player {
+.player-container {
+    display: flex;
     position: fixed;
     background-color: rgb(10, 10, 10);
-    top: calc(100vh - 80px);
-    display: flex;
+    top: calc(100vh - 120px);
     align-items: center;
     justify-content: center;
-    padding: 20px;
     width: 100vw;
 }
 
-.now-playing {
+.player {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
+}
+
+.player audio {
+    width: 50vw;
+}
+
+.now-playing {
+    padding-bottom: 10px;
+}
+
+.player-track-cover {
+    width: 100px;
+    border-radius: 5px;
 }
 
 .track {
