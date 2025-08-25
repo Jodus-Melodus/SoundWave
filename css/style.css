@@ -72,3 +72,20 @@ body {
     margin-right: 20px;
     border-style: none;
 }
+
+.top-menu {
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    justify-content: right;
+}
+
+.top-menu input {
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 110%;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    outline: none;
+    width: 20vw;
+}
