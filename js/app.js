@@ -1,19 +1,26 @@
 import { getLatestTracks, getSearch } from "./api.js";
 import { renderTitle, renderTrackList } from "./ui.js";
 
-const searchBar = document.getElementById("search-bar")
-searchBar.addEventListener("input", async () => {
-    const container = document.getElementById("search-results");
-    const searchResults = await getSearch(searchBar.value);
-    renderTrackList(searchResults, container);
-    renderTitle("Search Results");
-});
+// Event listeners
+const menuHome = document.getElementById("goto-home");
+menuHome.addEventListener("click", loadLatestTracks);
+
+const searchBar = document.getElementById("search-bar");
+searchBar.addEventListener("input", () => loadSearch(searchBar.value));
 
 async function loadLatestTracks() {
+    console.log("Click");
     const container = document.getElementById("tracks");
     const tracks = await getLatestTracks(10);
     renderTrackList(tracks, container);
     renderTitle("Latest Tracks");
+}
+
+async function loadSearch(searchText) {
+    const container = document.getElementById("search-results");
+    const searchResults = await getSearch(searchText);
+    renderTrackList(searchResults, container);
+    renderTitle("Search Results");
 }
 
 export function updateTab(url, trackName) {
