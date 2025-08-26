@@ -16,3 +16,8 @@ export function renderTrackList(tracks, container) {
   container.innerHTML = "";
   tracks.forEach(track => container.appendChild(renderTrack(track)));
 }
+
+export function renderTitle(title) {
+  const titleHeader = document.getElementById("page-title");
+  titleHeader.innerHTML = title
+}
