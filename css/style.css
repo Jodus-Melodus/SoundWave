@@ -26,6 +26,10 @@ body {
     cursor: pointer;
 }
 
+.sidebar li:hover {
+    color: rgb(155, 155, 155);
+}
+
 .main-content {
     background-color: rgb(20, 20, 20);
     height: calc(100vh - 80px);
